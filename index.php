@@ -20,7 +20,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css?v=<?php echo time(); ?>">
-  
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -33,21 +34,22 @@
         </div>
     </header>
 
+ 
+    <div id="main_container">
+        <div class="cards container">
             <?php foreach ($Albums as $cd) { ?>
-
-
-                <div class="cd">
-                    <img src="<?php echo $cd['poster']; ?>" alt="">
-                    <h2><?php echo $cd['title']; ?></h2>
-                    <h3><?php echo $cd['author']; ?></h3>
-                    <h4><?php echo $cd['genre']; ?></h4>
-                    <h4><?php echo $cd['year']; ?></h4>
+                <div class="card">
+                    <img src="<?php echo $cd['poster'] ?>">
+                    <h3><?php echo $cd['title'] ?></h3>
+                    <p><?php echo $cd['author'] ?></p>
+                    <p><?php echo $cd['genre'] ?></p>
+                    <p><?php echo $cd['year'] ?></p>
                 </div>
+            <?php  } ?>
+        </div>
 
+    </div>
 
-
-            <?php } ?>
-   
 
 
 
