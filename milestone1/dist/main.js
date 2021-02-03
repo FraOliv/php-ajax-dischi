@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return checkDeferredModules();
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkphp_ajax_dischi"] = self["webpackChunkphp_ajax_dischi"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkmilestone1"] = self["webpackChunkmilestone1"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 		
