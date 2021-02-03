@@ -1847,7 +1847,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var vue = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
+var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: "#root",
   data: {
     listaCD: []
@@ -1856,7 +1856,7 @@ var vue = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   mounted: function mounted() {
     var _this = this;
 
-    axios__WEBPACK_IMPORTED_MODULE_0___default().get("http://localhost/esercizi-boolean/Esercizio%2048%20-%20php-ajax-dischi/php-ajax-dischi/milestone2/data.php").then(function (response) {
+    axios__WEBPACK_IMPORTED_MODULE_0___default().get("./data.php").then(function (response) {
       _this.listaCD = response.data;
       console.log(_this.listaCD);
     })["catch"](function (error) {

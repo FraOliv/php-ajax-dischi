@@ -1,5 +1,5 @@
 <?php
-
+            //creo il mio database
             $Albums = [
                     [
                         "poster" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
@@ -76,7 +76,7 @@
 
 
 
-
+//trasformiamo il nostro database php in json
 header('Content-Type: application/json');
 echo json_encode($Albums);
 
