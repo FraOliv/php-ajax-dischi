@@ -1,0 +1,37 @@
+{
+  "name": "php-ajax-dischi",
+  "version": "1.0.0",
+  "description": "php-ajax-dischi Stampare a schermo una decina di dischi musicali (vedi screenshot). Utilizzare: Html, Sass, JS, VueJS, PHP Prima Milestone: Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. Seconda Milestone: Attraverso l’utilizzo di AJAX: al caricamento della pagina ajax chiederà attraverso una chiamata i dischi a php e li stamperà attraverso VueJS.",
+  "main": "index.js",
+  "scripts": {
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FraOliv/php-ajax-dischi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FraOliv/php-ajax-dischi/issues"
+  },
+  "homepage": "https://github.com/FraOliv/php-ajax-dischi#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.11",
+    "postcss": "^8.2.4",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.6",
+    "sass-loader": "^8.0.2",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^2.6.12"
+  }
+}

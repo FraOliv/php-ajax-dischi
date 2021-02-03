@@ -1,0 +1,52 @@
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+
+h1 {
+
+  font-size: 65px;
+
+}
+
+
+
+.main_container {
+  width: 100vw;
+ background-color: #001632;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_container h3 {
+  color: white;
+}
+.main_container p {
+  color: white;
+}
+.main_container img {
+  height: 150px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 200px;
+  height: 310px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background: rgb(66, 58, 58);
+  text-align: center;
+  border: 3px solid white;
+}
