@@ -12,19 +12,30 @@ let app = new Vue ({
     data: {
 
         listaCD : [],
+        search : "",
+        authorList : [],
          
 
     },
     methods: {
         
     },
-    mounted() {
+    created() {
         axios.get("./data.php").then(response => {
             this.listaCD = response.data;
             console.log(this.listaCD);
-        }).catch(error=>{
-            console.log(error);
-        })
+            
+            });
     },
+
+    computed: {
+        filteredAuthor: function () {
+            return this.listaCD.filter((author) => {
+                return author.author.match(this.search);
+
+            });
+            
+        }
+    }
 
 })

@@ -1850,18 +1850,27 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: "#root",
   data: {
-    listaCD: []
+    listaCD: [],
+    search: "",
+    authorList: []
   },
   methods: {},
-  mounted: function mounted() {
+  created: function created() {
     var _this = this;
 
     axios__WEBPACK_IMPORTED_MODULE_0___default().get("./data.php").then(function (response) {
       _this.listaCD = response.data;
       console.log(_this.listaCD);
-    })["catch"](function (error) {
-      console.log(error);
     });
+  },
+  computed: {
+    filteredAuthor: function filteredAuthor() {
+      var _this2 = this;
+
+      return this.listaCD.filter(function (author) {
+        return author.author.match(_this2.search);
+      });
+    }
   }
 });
 
